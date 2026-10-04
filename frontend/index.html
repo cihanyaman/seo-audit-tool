@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>SEO Denetim ve İçerik Öneri Aracı</title>
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>SEO Denetim ve İçerik Öneri Aracı</h1>
+    <p class="alt-baslik">Teknik SEO denetimi + AI destekli içerik önerileri</p>
+  </header>
+
+  <main>
+    <section class="kart">
+      <h2>1. Teknik SEO Denetimi</h2>
+      <form id="denetim-form">
+        <input type="url" id="url-girisi" placeholder="https://ornek-site.com" required />
+        <button type="submit">Denetle</button>
+      </form>
+      <div id="denetim-yukleniyor" class="yukleniyor gizli">Analiz ediliyor...</div>
+      <div id="denetim-sonuc" class="sonuc-alani"></div>
+    </section>
+
+    <section class="kart">
+      <h2>2. AI Destekli İçerik Önerisi</h2>
+      <form id="icerik-form">
+        <textarea id="metin-girisi" rows="8" placeholder="SEO analizi için metninizi buraya yapıştırın..." required></textarea>
+        <input type="text" id="anahtar-kelime-girisi" placeholder="Hedef anahtar kelime (opsiyonel)" />
+        <button type="submit">Öneri Al</button>
+      </form>
+      <div id="icerik-yukleniyor" class="yukleniyor gizli">Öneriler oluşturuluyor...</div>
+      <div id="icerik-sonuc" class="sonuc-alani"></div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
